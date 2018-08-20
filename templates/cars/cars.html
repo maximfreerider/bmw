@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <!-- Custom styles-->
+    <link rel="stylesheet" href="{% static 'static/style.css' %}">
+
+</head>
+<body>
+
+        <div class="general-container"></div>
+                    <div class="top-container"></div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offst-2">
+                <h1 class="title">Наша новая машина!</h1>
+                <h1 class="title">Call us!</h1>
+                <div>
+
+                    <form action="" method="post">{% csrf_token %}
+                          {{ form.as_p }}
+                    <div>
+                        <button type="submit" class="btn btn-primary">Войти</button>
+                    </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Latest compiled and manified JavaScript-->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity=""
+
+</body>
+</html>
