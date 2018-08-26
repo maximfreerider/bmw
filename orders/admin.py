@@ -2,8 +2,14 @@ from django.contrib import admin
 from .models import *  # Из текущей папки из файла models импортируем всё
 
 
+class ProductInOrderInline(admin.TabularInline):
+    model = ProductInOrder
+    extra = 0
+
+
 class StatusAdmin(admin.ModelAdmin):
     list_display = [field.name for field in Status._meta.fields]
+    inlines = [ProductInOrderInline]
 
     class Meta:
         model = Status

@@ -10,4 +10,4 @@ class User(models.Model):
 
     class Meta:
         verbose_name = 'User'
-        verbose_name_plural = 'A lot of users'
+        verbose_name_plural = 'Все пользователи'
